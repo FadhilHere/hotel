@@ -86,7 +86,7 @@ class AdminController extends Controller
         $request->validate([
             'nama' => 'required',
             'email' => "required|email|unique:admins,email,($admin->id)",
-            'password' => 'nullable|min:4',
+            'password' => 'nullable|min:4|confirmed',
             // 'role' => 'nullable'
         ]);
 

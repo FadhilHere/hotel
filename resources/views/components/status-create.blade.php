@@ -14,3 +14,12 @@
     </button>
 </div>
 @endif
+
+@if (session('status')=='destroy')
+<div class="alert alert-success alert-dismissible fade show">
+    <strong>Berhasil Hapus!</strong> Data telah berhasil dihapus.
+    <button type="button" data-dismiss="alert" aria-label="close" class="close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+@endif
